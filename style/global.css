@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    direction: rtl;
 }
 
 @font-face{
-    font-family: Iranian Sans;
+    font-family: IranianSans;
     src: url('../font/Iranian\ Sans.ttf');
 }

@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import styles from '../style/home.module.css'
 
 function Home(props) {
@@ -20,9 +19,13 @@ function Home(props) {
             
           </form>
       <footer className={styles.footer} >
+        <p>
       با ثبت نام و ورود به شب نما اقرار مینمایم که <span className={styles.red}>حریم
        خصوصی</span> و <span className={styles.red}>قوانین استفاده
-       </span> را مطالعه نموده و پذیرفته ام</footer>
+       </span> را مطالعه نموده و پذیرفته ام
+       
+        </p>
+      </footer>
       </div>
     </div>
   )
@@ -31,7 +34,10 @@ function Home(props) {
 export default Home
 
 export async function getStaticProps(){
-  props : {
+  return{
+    props : {
 
+    }
   }
+
 }
