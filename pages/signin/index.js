@@ -1,6 +1,7 @@
+import Link from 'next/link'
 import styles from '../../style/signin.module.css'
 
-function SignIn() {
+function SignIn(props) {
   return (
     <>
     <div className={styles.body} >
@@ -15,26 +16,33 @@ function SignIn() {
                     className={styles.userName} 
                     type="text"
                     placeholder="شماره موبایل" >
-                        
                     </input>
                     <input 
                     className={styles.password} 
                     type="password"
                     placeholder='رمزعبور' />
-                    <button className={styles.forgottenPass} href="#">
-                        <span className={styles.red}>
-                             فراموشی رمز عبور        
-                        </span>
-                        </button>
-                        <button className={styles.signInBtn} href="#">
-                        ورود
-                        </button>
+                    
+                        <button className={styles.forgottenPass} >
+                            <Link className={styles['link']} href='#'>
+                                <span className={styles.red }>
+                                    فراموشی رمز عبور        
+                                </span>
+                            </Link>
+                            </button>
+                   
+                            <button className={styles.signInBtn} href="#">
+                                <Link className={styles['link'] + " " + styles['white'] } href='#' >
+                                    ورود
+                                </Link>
+                            </button>
                 </form>
                 <footer>
                     <p className={styles.footerTxt} >
                           آیا عضو جدید هستید؟ 
-                         <button href='#' className={styles['red'] +" " + styles['signUpBtn'] } >
-                            ثبت نام
+                         <button className={ styles.signUpBtn } >
+                            <Link className={styles['link'] + " " + styles['red'] } href= '/signup'>
+                                ثبت نام
+                            </Link>
                         </button>
                     </p>
                 </footer>
@@ -45,3 +53,11 @@ function SignIn() {
 }
 
 export default SignIn
+
+export async function getStaticProps(props){
+    return{
+        props : {
+
+        }
+    }
+}
