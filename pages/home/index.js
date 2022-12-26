@@ -1,17 +1,50 @@
 import Link from "next/link"
-import Image from 'next/image'
+import {AiOutlineHistory} from 'react-icons/ai'
 import styles from '../../style/home.module.css'
 
-function Home() {
+function Home(props) {
 
   return (
     <>
         <div className={styles.body} >
             <div className= {styles.main} >
+              
                 <header className={styles.header} >
                     <h1 className={styles.title} >لوتوس</h1>
                     <Link href='#' className={styles.basket} />
                 </header>
+
+                <main className={styles.container} >
+                  <button className={styles.reservation} >
+                   <Link className={styles['link'] + " " + styles['reservation'] } href='#' >
+                    <p className={styles.reserveTxt} >رزرو میز</p>
+                      <div className={styles.table}  />
+                      {/* <img className={styles.table} src={'/img/table.png'} alt="table" /> */}
+                   </Link>
+                  </button>
+
+                  <button className={styles.courseSignUp} >
+                    <Link href='#' className={styles['link'] + " " + styles['courseSignUp'] } >
+                      <p className={styles.courseTxt} >ثبت نام کلاس آموزشی</p>
+                      <div className={styles.signUp}  />
+                    </Link>
+                  </button>
+
+                  <button className={styles.cafe} >
+                    <Link  className={styles['link'] + " " + styles['cafeLink'] } href='#' >
+                      <p className={styles.cafeTxt} >کافه</p>
+                      <div className={styles.cafePic}  />
+                    </Link>
+                  </button>
+                </main>
+                <footer className={styles.footer} >
+                  <button className={styles.history}>
+                    <Link href='#' className={styles['link'] + " " + styles['historyLink']} >
+                      <i> <AiOutlineHistory /></i>
+                    <p className={styles.historyTxt} >تاریخچه</p>
+                    </Link>
+                  </button>
+                </footer>
             </div>
         </div>
     </>
@@ -19,3 +52,11 @@ function Home() {
 }
 
 export default Home
+
+export async function getStaticprops(props){
+  return{
+    props : {
+
+    }
+  }
+}

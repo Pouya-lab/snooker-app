@@ -4,24 +4,139 @@
 }
 
 .main{
-    background: url('../img/body.png');
+    background: url('../img/body.png')no-repeat;
     width: 429px;
     height: 926px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .header{
     display: flex;
-    margin-right: 140px;
+    margin-right: 170px;
+    margin-top: 29px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
 }
 
 .title{
     margin-left: 100px;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .basket{
     background: url('../img/basket.png')center;
     width: 44px;
     height: 44px;
+}
+
+.container{
+    margin-top: 174px;
+    margin-right: 45px;
+}
+
+.reservation{
+    background-color: #ffffff;
+    width: 231px;
+    height: 129px;
+    border-radius: 21px;
+    display: flex;
+    border: 0;
+}
+
+.table{
+    width: 80px;
+    height: 70px;
+    background: url('../img/table.png')no-repeat  ;
+    margin-right: 34px;
+    margin-top: 22px;
+}
+
+.reserveTxt{
+    margin-top: 21px;
+    margin-right: 31px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.courseSignUp{
+    background-color: #ffffff;
+    width: 339px;
+    height: 129px;
+    border-radius: 21px;
+    display: flex;
+    border: 0;
+    margin-top: 29px;
+}
+
+.courseTxt{
+    margin-right: 31px;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.signUp{
+    background: url('../img/course.png')no-repeat;
+    width: 80px;
+    height: 70px;
+    margin-right: 56px;
+    margin-top: 22px;
+}
+
+.cafe{
+    margin-top: 60px;
+    margin-right: 107px;
+    width: 231px;
+    height: 129px;
+    border: 0;
+    background-color: #ffffff;
+    border-radius: 21px;
+}
+
+.cafeLink{
+    display: flex;
+}
+
+.cafeTxt{
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 36px;
+    margin-top: 10px;
+}
+
+.cafePic{
+    background:url('../img/cafe.png') no-repeat ;
+    width: 80px;
+    height: 76px;
+    margin-right: 56px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 163px;
+}
+
+.history{
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 9px;
+}
+
+.historyLink{
+    display: flex;
+    width: 101px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.historyTxt{
+    font-size: 15px;
+    font-weight: 500;
 }
