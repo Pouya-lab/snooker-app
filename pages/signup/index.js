@@ -32,7 +32,7 @@ function SignUp(props) {
                             </Link>
                             </button>
                             <button className={styles.signUpBtn}>
-                                <Link className={styles['link'] + " " + styles['white']}   href='#' >
+                                <Link className={styles['link'] + " " + styles['white']}   href='/signup/userinfo' >
                                         ثبت نام
                                     </Link>
                             </button>
