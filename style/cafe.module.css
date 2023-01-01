@@ -7,16 +7,12 @@
     background: url('../img/body.png')no-repeat center;
     width: 429px;
     height: 926px;
-    display: flex;
-    flex-direction: column;
 }
 
 .header{
     display: flex;
     margin-right: 170px;
     margin-top: 29px;
-    /* padding-top: 20px; */
-    /* background-color: red; */
 }
 
 .link{
@@ -230,4 +226,5 @@
 .historyTxt{
     font-size: 15px;
     font-weight: 500;
+    margin-right: 6px;
 }

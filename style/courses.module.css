@@ -1,0 +1,151 @@
+.body{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    background: url('../img/body.png')no-repeat center;
+    width: 429px;
+    height: 926px;
+}
+
+.header{
+    display: flex;
+    margin-right: 170px;
+    margin-top: 29px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.white{
+    color: #ffffff!important;
+    text-decoration: none;
+}
+
+.title{
+    margin-left: 100px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.basket{
+    background: url('../img/basket.png')center;
+    width: 44px;
+    height: 44px;
+}
+
+.courseField{
+    display: flex;
+    margin-right: 8px;
+}
+
+.rightBtn , .leftBtn {
+    height: 50px;
+    margin-top: 390px;
+    background-color: inherit;
+    border: 0;
+}
+
+.icon{
+    font-size: 40px;
+}
+
+.container{
+    background-color: #ffffff;
+    width: 317px;
+    height: 542px;
+    margin-top: 144px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 21px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.courseTitle{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 11px;
+    border-bottom: 2px solid rgba(0, 0, 0, .4);
+    width: 252px;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.courseMain{
+    background: url('../img/course-main.png');
+    width: 252px;
+    height: 155px;
+    margin-top: 21px;
+}
+
+.courseInfo{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-right: -90px;
+}
+
+.price{
+    display: flex;
+    font-size: 14px;
+    margin-right: -140px;
+    margin-top: 14px;
+}
+
+.ticket{
+    background: url('../img/course-ticket.png');
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.courseText{
+    width: 252px;
+    height: 161px;
+    margin-top: 14px;
+    line-height: 21px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.signUpCourse{
+    margin-top: 12px;
+    width: 191px;
+    height: 35px;
+    border-radius: 8px;
+    border: 0;
+    background: linear-gradient(267.09deg, #AE1010 0%, #661313 100%);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 112px;
+}
+
+.history{
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 9px;
+}
+
+.historyLink{
+    display: flex;
+    width: 101px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.historyTxt{
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 6px;
+}
