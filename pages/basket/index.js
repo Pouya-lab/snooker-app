@@ -1,16 +1,13 @@
 import Link from 'next/link'
 import { useState } from 'react'
-import {CgCoffee} from 'react-icons/cg'
-import {CiBowlNoodles} from 'react-icons/ci'
 import {FiMinus} from 'react-icons/fi'
-import {BiPlus , BiDrink } from 'react-icons/bi'
+import {BiPlus} from 'react-icons/bi'
 import {AiOutlineHistory} from 'react-icons/ai'
 import {BsChevronRight} from 'react-icons/bs'
 import styles from '../../style/basket.module.css'
 
 function Basket(props) {
 
-    
     const [display , setDisplay] = useState(false)
     const [totalCount , setTotalCount] = useState(0)
     const [items , setItems] = useState([
@@ -61,7 +58,7 @@ function Basket(props) {
                         </Link>
                     </button>
                     <h1 className={styles.title} >لوتوس</h1>
-                    <Link href='#' className={styles.basket} />
+                    <Link href='/basket' className={styles.basket} />
                 </header>
 
                 <div className={styles.basketTitle} >
@@ -69,10 +66,10 @@ function Basket(props) {
                 </div>
 
                 <main className={styles.container} >
-                        <div className={styles.coffeeList}>
+                        <div className={styles.itemList}>
                           {items.map((item , index)=>(
-                            <div className={styles.coffeeListItems}>
-                                <div className={styles.coffeeName}>{item.name}</div>
+                            <div className={styles.listItems}>
+                                <div className={styles.itemName}>{item.name}</div>
                                 <div className={styles.price}>{item.price} تومان </div>
                                 <div className={styles.quantity}>
                                   {!display ?

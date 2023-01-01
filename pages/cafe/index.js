@@ -57,7 +57,7 @@ function Cafe() {
               
                 <header className={styles.header} >
                     <h1 className={styles.title} >لوتوس</h1>
-                    <Link href='#' className={styles.basket} />
+                    <Link href='/basket' className={styles.basket} />
                 </header>
 
                 <main className={styles.container} >

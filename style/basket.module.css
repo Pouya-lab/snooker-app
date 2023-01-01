@@ -65,11 +65,11 @@
     flex-direction: column;
 }
 
-.coffeeList{
+.itemList{
     margin-top: 17px;
 }
 
-.coffeeListItems{
+.listItems{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 13px;
@@ -80,11 +80,11 @@
     width: 290px;
 }
 
-.coffeeListItems:last-child{
+.listItems:last-child{
     border: 0;
 }
 
-.coffeeName{
+.itemName{
     margin-left: 20px;
     width: 110px;
     word-wrap: break-word;
