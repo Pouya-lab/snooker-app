@@ -5,21 +5,20 @@ import {CiBowlNoodles} from 'react-icons/ci'
 import {FiMinus} from 'react-icons/fi'
 import {BiPlus , BiDrink } from 'react-icons/bi'
 import {AiOutlineHistory} from 'react-icons/ai'
-import styles from '../../style/cafe.module.css'
+import {BsChevronRight} from 'react-icons/bs'
+import styles from '../../style/basket.module.css'
 
-function Cafe() {
+function Basket(props) {
 
+    
     const [display , setDisplay] = useState(false)
     const [totalCount , setTotalCount] = useState(0)
-    const [coffees , setCoffees] = useState([
+    const [items , setItems] = useState([
       { name : 'اسپرسو' , price : 12500 , quantity : 0 } , 
       { name : 'آمریکانو' , price : 12500 , quantity : 0 } , 
-      { name : 'اسپرسو' , price : 12500 , quantity : 0 } , 
-      { name : 'اسپرسو' , price : 12500 , quantity : 0 } ,
-      { name : 'اسپرسو' , price : 12500 , quantity : 0 } ,
-      { name : 'اسپرسو' , price : 12500 , quantity : 0 } ,
-      { name : 'آمریکانو' , price : 12500 , quantity : 0 } ,
-      { name : 'آمریکانو' , price : 12500 , quantity : 0 } 
+      { name : 'میز 8ball معمولی' , price : 12500 , quantity : 0 } , 
+      { name : 'میز فوتبال دستی معمولی' , price : 12500 , quantity : 0 } ,
+      { name : 'میز pes5 vip' , price : 12500 , quantity : 0 }
     ])
 
     const displayQuantity = (index)=>{
@@ -28,22 +27,22 @@ function Cafe() {
 
     
   const quantityIncrease = (index) =>{
-    const newCoffee = [...coffees]
-    newCoffee[index].quantity++;
-    setCoffees(newCoffee)
+    const newItem = [...items]
+    newItem[index].quantity++;
+    setItems(newItem)
     calculateTotal()
   }
 
   const quantityDecrease = (index) =>{
-    const newCoffee = [...coffees]
-      newCoffee[index].quantity--;
-    setCoffees(newCoffee)
+    const newItem = [...items]
+      newItem[index].quantity--;
+    setItems(newItem)
     calculateTotal()
   }
 
   const calculateTotal = ()=>{
-    const totalValue = coffees.reduce((total , coffee)=>{
-     return total + coffee.quantity
+    const totalValue = items.reduce((total , item)=>{
+     return total + item.quantity
     } , 0 )
     setTotalCount(totalValue)
    }
@@ -56,40 +55,25 @@ function Cafe() {
             <div className= {styles.main} >
               
                 <header className={styles.header} >
+                    <button className={styles.rightIcon} >
+                        <Link className={styles.link}  href='#' >
+                            <BsChevronRight className={styles.icon} />
+                        </Link>
+                    </button>
                     <h1 className={styles.title} >لوتوس</h1>
                     <Link href='#' className={styles.basket} />
                 </header>
 
+                <div className={styles.basketTitle} >
+                    سبد پرداخت  
+                </div>
+
                 <main className={styles.container} >
-                        <h3 className={styles.containerTitle} >کافه</h3>
-                        <div className={styles.options} >
-                            
-                            <button href='#' className={styles.optionCoffee}>
-                                    <i className={styles.coffeeIcon}>
-                                    <CgCoffee/> 
-                                    </i>
-                                    قهوه
-                            </button>
-
-                            <button href='#' className={styles.optionDrink} >
-                                    <i className={styles.drinkIcon}>
-                                    <BiDrink/> 
-                                    </i>
-                                    نوشیدنی
-                            </button>
-                            <button href='#' className={styles.optionFood} >
-                                    <i className={styles.foodIcon}>
-                                    <CiBowlNoodles/>
-                                    </i>
-                                    غذا
-                            </button>
-                        </div>
-
                         <div className={styles.coffeeList}>
-                          {coffees.map((coffee , index)=>(
+                          {items.map((item , index)=>(
                             <div className={styles.coffeeListItems}>
-                                <div className={styles.coffeeName}>{coffee.name}</div>
-                                <div className={styles.price}>{coffee.price} تومان </div>
+                                <div className={styles.coffeeName}>{item.name}</div>
+                                <div className={styles.price}>{item.price} تومان </div>
                                 <div className={styles.quantity}>
                                   {!display ?
                                   (<div className={styles.quantityCountDefault}>
@@ -107,7 +91,7 @@ function Cafe() {
                                         <BiPlus/>
                                       </button>
                                         <p className={styles.itemQuantity} >
-                                        {coffee.quantity}
+                                        {item.quantity}
                                         </p>
                                       <button
                                       className={styles.decreaseBtn}
@@ -119,10 +103,15 @@ function Cafe() {
                             </div>
                         )
                         )}
-                    
               </div>
-
                 </main>
+
+                    <button className={styles.pay} >
+                        <Link className={styles['link'] + " " + styles['white']}  href='#' >
+                        پرداخت      
+                        </Link>
+                    </button>
+
                 <footer className={styles.footer} >
                 <button className={styles.history}>
                     <Link href='#' className={styles['link'] + " " + styles['historyLink']} >
@@ -137,9 +126,9 @@ function Cafe() {
   )
 }
 
-export default Cafe
+export default Basket
 
-export async function getStaticprops(props){
+export async function getStaticProps(props){
     return{
         props:{
 

@@ -1,0 +1,173 @@
+.body{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    background: url('../img/body.png')no-repeat center;
+    width: 429px;
+    height: 926px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 29px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.white{
+    color: #ffffff!important;
+}
+
+.rightIcon{
+    background-color: inherit;
+    border: 0;
+}
+
+.icon{
+    font-size: 22px;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.basket{
+    background: url('../img/basket.png')center;
+    width: 44px;
+    height: 44px;
+}
+
+.basketTitle{
+    font-size: 25px;
+    font-weight: 700;
+    color: #AE1010;
+    margin-right: 37%;
+    margin-top: 120px;
+}
+
+.container{
+    background-color: #ffffff;
+    width: 339px;
+    height: 288px;
+    margin-top: 40px;
+    margin-right: 55px;
+    border-radius: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coffeeList{
+    margin-top: 17px;
+}
+
+.coffeeListItems{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 7px;
+    width: 290px;
+}
+
+.coffeeListItems:last-child{
+    border: 0;
+}
+
+.coffeeName{
+    margin-left: 20px;
+    width: 110px;
+    word-wrap: break-word;
+}
+
+.price{
+    font-size: 12px;
+    margin-bottom: -9px;
+    font-weight: 500;
+    margin-right: -20px;
+}
+
+.quantity{
+    display: flex;
+    margin-right: px;
+}
+
+
+
+.increaseBtn{
+    background-color: inherit;
+    border: 0;
+    color: #10AE46;
+    font-size: 22px;
+    font-weight: 500;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    width: 26px;
+    height: 24px;
+}
+
+.itemQuantity{
+    margin: 0 7px;
+}
+
+.countQuantity{
+    display: flex;
+    margin-right: 42px;
+}
+
+.decreaseBtn{
+    background-color: inherit;
+    border: 0;
+    font-size: 22px;
+    font-weight: 500;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    width: 26px;
+    height: 24px;
+}
+
+.pay{
+    background: linear-gradient(267.09deg, #AE1010 0%, #661313 100%);
+    border-radius: 8px;
+    border: 0;
+    width: 191px;
+    height: 35px;
+    margin-top: 57px;
+    margin-right: 120px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 240px;
+}
+
+.history{
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 9px;
+}
+
+.historyLink{
+    display: flex;
+    width: 101px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.historyTxt{
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 6px;
+}
