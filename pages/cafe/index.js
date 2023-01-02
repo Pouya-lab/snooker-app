@@ -125,7 +125,7 @@ function Cafe() {
                 </main>
                 <footer className={styles.footer} >
                 <button className={styles.history}>
-                    <Link href='#' className={styles['link'] + " " + styles['historyLink']} >
+                    <Link href='/history' className={styles['link'] + " " + styles['historyLink']} >
                       <i> <AiOutlineHistory /></i>
                     <p className={styles.historyTxt} >تاریخچه</p>
                     </Link>

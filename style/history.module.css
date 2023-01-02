@@ -1,0 +1,86 @@
+.body{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    background: url('../img/body.png')no-repeat center;
+    width: 429px;
+    height: 926px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 29px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.white{
+    color: #ffffff!important;
+}
+
+.rightIcon{
+    background-color: inherit;
+    border: 0;
+}
+
+.icon{
+    font-size: 22px;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.basket{
+    background: url('../img/basket.png')center;
+    width: 44px;
+    height: 44px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historyTitle{
+    margin-top: 124px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #AE1010;
+}
+
+.historyOptions{
+    margin-top: 65px;
+    text-align: center;
+}
+
+.option{
+    width: 339px;
+    height: 94px;
+    text-align: center;
+    background-color: #ffffff;
+    margin-top: 19px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 21px;
+    border: 0;
+}
+
+.home{
+    margin-top: 250px;
+    background-color: #ffffff;
+    border: 0;
+    width: 75px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+}
