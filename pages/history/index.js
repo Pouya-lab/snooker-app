@@ -2,7 +2,8 @@ import Link from 'next/link'
 import {BsChevronRight} from 'react-icons/bs'
 import {RiHomeLine} from 'react-icons/ri'
 import styles from '../../style/history.module.css'
-function History() {
+
+function History(props) {
   return (
     <>
        <div className={styles.body} >
@@ -19,36 +20,36 @@ function History() {
                 </header>
                 <div className={styles.container} >
                     
-                <p className={styles.historyTitle} >
-                    سوابق
-                </p>
+                    <p className={styles.historyTitle} >
+                        سوابق
+                    </p>
 
-                <div className={styles.historyOptions} >
-                    <button className={styles.option} >
-                        <Link className={styles.link} href='#' >
-                        سوابق رزرو میز
-                        </Link>
-                    </button>
-                    <button className={styles.option} >سوابق شرکت 
-                        <Link className={styles.link}  href='#' >
-                        در دوره های آموزشی
-                        </Link>
-                    </button>
-                    <button className={styles.option} >  
-                        <Link className={styles.link} href='#' >
-                        سوابق خرید از کافه  
-                        </Link>
-                    </button>
-                </div>
-                
-                <footer>
-                    <button className={styles.home} >
-                        <Link className={styles.link}  href='/home' >
-                            <RiHomeLine/>
-                            خانه
-                        </Link>
-                    </button>
-                </footer>
+                    <div className={styles.historyOptions} >
+                        <button className={styles.option} >
+                            <Link className={styles.link} href='/history/tableHistory' >
+                            سوابق رزرو میز
+                            </Link>
+                        </button>
+                        <button className={styles.option} >سوابق شرکت 
+                            <Link className={styles.link}  href='#' >
+                            در دوره های آموزشی
+                            </Link>
+                        </button>
+                        <button className={styles.option} >  
+                            <Link className={styles.link} href='#' >
+                            سوابق خرید از کافه  
+                            </Link>
+                        </button>
+                    </div>
+                    
+                    <footer>
+                        <button className={styles.home} >
+                            <Link className={styles.link}  href='/home' >
+                                <RiHomeLine/>
+                                خانه
+                            </Link>
+                        </button>
+                    </footer>
                 </div>
             </div>
         </div>
@@ -57,3 +58,11 @@ function History() {
 }
 
 export default History
+
+export async function getStaticProps(props){
+    return{
+        props:{
+
+        }
+    }
+}
