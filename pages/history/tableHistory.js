@@ -23,15 +23,18 @@ function TableHistory(props) {
                <div className={styles.container} >
 
                 <main className={styles.mainContent} >
+                    
                     <p className={styles.tableHistoryTitle} >
                         سوابق رزرو میز
                     </p>
+
                     <select id="date" className={styles.dates} >
                         <option value="dates">انتخاب تاریخ</option>
                     </select>
+
                     <div className={styles.tableReservationHistory} >
 
-                        <div className={styles.tableItems}>
+                        <div >
 
                             <p className={styles.date} >
                             1400/5/25
@@ -209,7 +212,9 @@ function TableHistory(props) {
 
                             
                         </div>
+
                     </div>
+
                 </main>
     
                  <footer>

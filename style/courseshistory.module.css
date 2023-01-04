@@ -1,0 +1,139 @@
+.body{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    background: url('../img/body.png')no-repeat center;
+    width: 429px;
+    height: 926px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 29px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.white{
+    color: #ffffff!important;
+}
+
+.rightIcon{
+    background-color: inherit;
+    border: 0;
+}
+
+.icon{
+    font-size: 22px;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.basket{
+    background: url('../img/basket.png')center;
+    width: 44px;
+    height: 44px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courseHistoryTitle{
+    margin-top: 124px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #AE1010;
+}
+
+.dates{
+    margin-right: 30px;
+    margin-top: 56px;
+    background-color: inherit;
+    border-radius: 6px;
+    border: 2px solid #AE1010;
+    width: 102px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    width:100px;
+}
+
+
+.coursesHistory{
+    margin-right: 36px;
+    background-color: #ffffff;
+    width: 317px;
+    height: 343px;
+    margin-top: 21px;
+    overflow-y: scroll;
+    direction: ltr!important;
+    border-radius: 21px;
+    margin-right: -10px;
+}
+
+.coursesHistory::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .coursesHistory::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, .15); 
+    border-radius: 8px;
+  }
+  
+  .coursesHistory::-webkit-scrollbar-thumb {
+    background-color: #4f4f4f;    
+    border-radius: 20px;       
+  }
+  
+  .date{
+    font-size: 15px;
+    font-weight: 700;
+    color: #AE1010;
+    padding-right: 15px;
+    margin-top: 30px;
+  }
+
+.date::before{
+    display: inline-block;
+    content: "";
+    border-top: 2px solid rgba(0, 0, 0, .15);
+    width: 211px;
+    margin: 0 1px;
+    transform: translateY(-2px);
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 21px;
+}
+
+.home{
+    margin-top: 200px;
+    background-color: #ffffff;
+    border: 0;
+    width: 75px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+}

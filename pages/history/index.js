@@ -30,13 +30,13 @@ function History(props) {
                             سوابق رزرو میز
                             </Link>
                         </button>
-                        <button className={styles.option} >سوابق شرکت 
-                            <Link className={styles.link}  href='#' >
-                            در دوره های آموزشی
+                        <button className={styles.option} >
+                            <Link className={styles.link}  href='/history/courseshistory' >
+                            سوابق شرکت در دوره های آموزشی
                             </Link>
                         </button>
                         <button className={styles.option} >  
-                            <Link className={styles.link} href='#' >
+                            <Link className={styles.link} href='/history/cafehistory' >
                             سوابق خرید از کافه  
                             </Link>
                         </button>
