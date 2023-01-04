@@ -29,7 +29,7 @@ function SignUp(props) {
                     type="text"
                     placeholder=" نحوه آشنایی با ما  " />
                             <button className={styles.login} >
-                                <Link className={styles['link'] + " " + styles['white']}   href='#' >
+                                <Link className={styles['link'] + " " + styles['white']}   href='/home' >
                                         ورود به برنامه 
                                     </Link>
                             </button>

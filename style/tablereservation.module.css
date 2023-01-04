@@ -1,0 +1,98 @@
+.body{
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    background: url('../img/body.png')no-repeat center;
+    width: 429px;
+    height: 926px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 29px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.white{
+    color: #ffffff!important;
+}
+
+.rightIcon{
+    background-color: inherit;
+    border: 0;
+}
+
+.icon{
+    font-size: 22px;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.basket{
+    background: url('../img/basket.png')center;
+    width: 44px;
+    height: 44px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 123px;
+}
+
+.reserveTitle{
+    margin-bottom: 48px;
+    color: #AE1010;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.content > button{
+    width: 339px;
+    height: 94px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 21px;
+    font-size: 20px;
+    font-weight: 700;
+    direction: ltr;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.history{
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 9px;
+}
+
+.historyLink{
+    display: flex;
+    width: 101px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.historyTxt{
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 6px;
+}

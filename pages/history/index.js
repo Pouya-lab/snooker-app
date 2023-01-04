@@ -18,6 +18,7 @@ function History(props) {
                     <h1 className={styles.title} >لوتوس</h1>
                     <Link href='/basket' className={styles.basket} />
                 </header>
+                
                 <div className={styles.container} >
                     
                     <p className={styles.historyTitle} >

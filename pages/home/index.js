@@ -24,14 +24,14 @@ function Home(props) {
                   </button>
 
                   <button className={styles.courseSignUp} >
-                    <Link href='#' className={styles['link'] + " " + styles['courseSignUp'] } >
+                    <Link href='/courses' className={styles['link'] + " " + styles['courseSignUp'] } >
                       <p className={styles.courseTxt} >ثبت نام کلاس آموزشی</p>
                       <div className={styles.signUp}  />
                     </Link>
                   </button>
 
                   <button className={styles.cafe} >
-                    <Link  className={styles['link'] + " " + styles['cafeLink'] } href='#' >
+                    <Link  className={styles['link'] + " " + styles['cafeLink'] } href='/cafe' >
                       <p className={styles.cafeTxt} >کافه</p>
                       <div className={styles.cafePic}  />
                     </Link>

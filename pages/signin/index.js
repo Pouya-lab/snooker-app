@@ -30,8 +30,8 @@ function SignIn(props) {
                             </Link>
                             </button>
                    
-                            <button className={styles.signInBtn} href="#">
-                                <Link className={styles['link'] + " " + styles['white'] } href='#' >
+                            <button className={styles.signInBtn}>
+                                <Link className={styles['link'] + " " + styles['white'] } href='/home' >
                                     ورود
                                 </Link>
                             </button>
