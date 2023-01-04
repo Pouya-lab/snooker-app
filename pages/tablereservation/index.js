@@ -26,21 +26,21 @@ function Tablereservation(props) {
                     </p>
 
                     <button >
-                      <Link href='#' className={styles.link}>
+                      <Link href='/tablereservation/eightball' className={styles.link}>
                       8 Ball
                       </Link>
                     </button>
-                    <button className="tableOption">
+                    <button className>
                       <Link href='#' className={styles.link}>
                         Snooker
                       </Link>
                     </button>
-                    <button className="tableOption">
+                    <button className>
                       <Link href='#' className={styles.link}>
                           PS5
                       </Link>
                     </button>
-                    <button className="tableOption">
+                    <button className>
                       <Link href='#' className={styles.link}>
                       فوتبال دستی
                       </Link>
