@@ -11,7 +11,7 @@ function CoursesHistory(props) {
               
                 <header className={styles.header} >
                     <button className={styles.rightIcon} >
-                        <Link className={styles.link}  href='#' >
+                        <Link className={styles.link}  href='/history' >
                             <BsChevronRight className={styles.icon} />
                         </Link>
                     </button>
@@ -30,7 +30,7 @@ function CoursesHistory(props) {
                     </select>
                     <div className={styles.coursesHistory} >
 
-                        <div >
+                        <div className={styles.courseContent} >
 
                             <p className={styles.date} >
                             1400/5/25

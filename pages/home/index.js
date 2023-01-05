@@ -16,7 +16,7 @@ function Home(props) {
 
                 <main className={styles.container} >
                   <button className={styles.reservation} >
-                   <Link className={styles['link'] + " " + styles['reservation'] } href='#' >
+                   <Link className={styles['link'] + " " + styles['reservation'] } href='/tablereservation' >
                     <p className={styles.reserveTxt} >رزرو میز</p>
                       <div className={styles.table}  />
                       {/* <img className={styles.table} src={'/img/table.png'} alt="table" /> */}

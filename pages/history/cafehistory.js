@@ -11,7 +11,7 @@ function cafehistory(props) {
               
                 <header className={styles.header} >
                     <button className={styles.rightIcon} >
-                        <Link className={styles.link}  href='#' >
+                        <Link className={styles.link}  href='/history' >
                             <BsChevronRight className={styles.icon} />
                         </Link>
                     </button>
@@ -24,10 +24,12 @@ function cafehistory(props) {
                 <main className={styles.mainContent} >
                     <p className={styles.cafeHistoryTitle} >
                     سوابق خرید از کافه                    </p>
+
                     <select id="date" className={styles.dates} >
                         <option value="dates">انتخاب تاریخ</option>
                     </select>
-                    <div className={styles.cafeHistory} >
+                    <div className={styles.cafeHistory}>
+                    <div className={styles.cafeContent} >
                         <div>
 
                             <p className={styles.date} >
@@ -344,6 +346,9 @@ function cafehistory(props) {
                             
                         </div>
                     </div>
+
+                    </div>
+
                 </main>
     
                  <footer>

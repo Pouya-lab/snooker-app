@@ -84,22 +84,30 @@
     width: 317px;
     height: 343px;
     margin-top: 21px;
-    overflow-y: scroll;
     direction: ltr!important;
     border-radius: 21px;
     margin-right: -10px;
+    padding-top: 20px;
 }
 
-.cafeHistory::-webkit-scrollbar {
+.cafeContent{
+    width: 310px;
+    height: 308px;
+    padding-right: 5px;
+    overflow-y: scroll;
+    direction: ltr;
+}
+
+.cafeContent::-webkit-scrollbar {
     width: 8px;
   }
   
-  .cafeHistory::-webkit-scrollbar-track {
+  .cafeContent::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, .15); 
     border-radius: 8px;
   }
   
-  .cafeHistory::-webkit-scrollbar-thumb {
+  .cafeContent::-webkit-scrollbar-thumb {
     background-color: #4f4f4f;    
     border-radius: 20px;       
   }

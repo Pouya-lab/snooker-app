@@ -12,7 +12,7 @@ function EightBall(props) {
               
                  <header className={styles.header} >
                     <button className={styles.rightIcon} >
-                        <Link className={styles.link}  href='#' >
+                        <Link className={styles.link}  href='/tablereservation' >
                             <BsChevronRight className={styles.icon} />
                         </Link>
                     </button>

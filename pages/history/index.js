@@ -11,7 +11,7 @@ function History(props) {
               
                 <header className={styles.header} >
                     <button className={styles.rightIcon} >
-                        <Link className={styles.link}  href='#' >
+                        <Link className={styles.link}  href='/home' >
                             <BsChevronRight className={styles.icon} />
                         </Link>
                     </button>

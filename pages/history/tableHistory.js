@@ -12,7 +12,7 @@ function TableHistory(props) {
               
                 <header className={styles.header} >
                     <button className={styles.rightIcon} >
-                        <Link className={styles.link}  href='#' >
+                        <Link className={styles.link}  href='/history' >
                             <BsChevronRight className={styles.icon} />
                         </Link>
                     </button>
@@ -34,7 +34,7 @@ function TableHistory(props) {
 
                     <div className={styles.tableReservationHistory} >
 
-                        <div >
+                        <div className={styles.historyContent} >
 
                             <p className={styles.date} >
                             1400/5/25
